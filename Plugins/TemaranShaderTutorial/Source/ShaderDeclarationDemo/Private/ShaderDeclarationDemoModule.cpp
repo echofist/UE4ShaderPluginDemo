@@ -80,8 +80,8 @@ void FShaderDeclarationDemoModule::UpdateParameters(FShaderUsageExampleParameter
 	bCachedParametersValid = true;
 	RenderEveryFrameLock.Unlock();
 }
-
-void FShaderDeclarationDemoModule::PostResolveSceneColor_RenderThread(FRHICommandListImmediate& RHICmdList, class FSceneRenderTargets& SceneContext)
+// void FShaderDeclarationDemoModule::PostResolveSceneColor_RenderThread(FRHICommandListImmediate& RHICmdList, class FSceneRenderTargets& SceneContext)
+void FShaderDeclarationDemoModule::PostResolveSceneColor_RenderThread(FRDGBuilder& GraphBuilder, const FSceneTextures& SceneContext)
 {
 	if (!bCachedParametersValid)
 	{
