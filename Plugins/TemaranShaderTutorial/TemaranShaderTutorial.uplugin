@@ -19,14 +19,12 @@
     {
       "Name": "ShaderDeclarationDemo",
       "Type": "Runtime",
-      "LoadingPhase": "PostConfigInit",
-      "WhitelistPlatforms": [ "Win64", "Win32" ]
+      "LoadingPhase": "PostConfigInit"
     },
     {
       "Name": "ShaderUsageDemo",
       "Type": "Runtime",
-      "LoadingPhase": "Default",
-      "WhitelistPlatforms": [ "Win64", "Win32" ]
+      "LoadingPhase": "Default"
     }
   ]
 }
